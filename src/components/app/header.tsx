@@ -41,7 +41,7 @@ export function AppHeader() {
         <div className="ml-auto flex items-center gap-2">
           <Button variant="ghost" asChild size="sm" className="hidden sm:flex">
             <a
-              href="https://github.com/uiuxarghya/8bits"
+              href="https://github.com/arghyaxcodes/8bits"
               rel="noopener noreferrer"
               target="_blank"
               className="dark:text-foreground"

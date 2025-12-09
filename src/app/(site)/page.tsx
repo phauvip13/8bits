@@ -54,7 +54,7 @@ export default async function Home() {
               review, or contribute to it however you want!
             </p>
             <div className="flex items-center justify-center">
-              <Link href="https://github.com/uiuxarghya/8bits">
+              <Link href="https://github.com/arghyaxcodes/8bits">
                 <Button
                   variant="default"
                   className="font-silkscreen flex items-center gap-x-3 px-6 text-lg tracking-tight transition-all duration-200 ease-in-out active:scale-95"

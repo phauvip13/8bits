@@ -20,7 +20,7 @@ export default function Footer() {
             </div>
             <div className="flex items-center gap-3">
               <Link
-                href="https://twitter.com/uiuxarghya"
+                href="https://twitter.com/arghyaxcodes"
                 target="_blank"
                 rel="noreferrer"
                 className="group rounded-full p-1"
@@ -41,7 +41,7 @@ export default function Footer() {
                 </svg>
               </Link>
               <Link
-                href="https://www.linkedin.com/in/uiuxarghya/"
+                href="https://www.linkedin.com/in/arghyaxcodes/"
                 target="_blank"
                 rel="noreferrer"
                 className="group rounded-full p-1"
@@ -61,7 +61,7 @@ export default function Footer() {
                 </svg>
               </Link>
               <Link
-                href="https://github.com/uiuxarghya/8bits"
+                href="https://github.com/arghyaxcodes/8bits"
                 target="_blank"
                 rel="noreferrer"
                 className="group rounded-full p-1"

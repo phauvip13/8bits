@@ -21,7 +21,7 @@ Thank you for considering contributing to **8bits** — a collaborative link sho
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/uiuxarghya/8bits.git
+git clone https://github.com/arghyaxcodes/8bits.git
 cd 8bits
 ```
 
@@ -108,8 +108,8 @@ We expect contributors to follow the [Code of Conduct](./CODE_OF_CONDUCT.md). Be
 
 ## 🤝 Community
 
-- [Issues](https://github.com/uiuxarghya/8bits/issues) – Request features or report bugs
-- [Discussions](https://github.com/uiuxarghya/8bits/discussions) – Ask questions, suggest ideas
+- [Issues](https://github.com/arghyaxcodes/8bits/issues) – Request features or report bugs
+- [Discussions](https://github.com/arghyaxcodes/8bits/discussions) – Ask questions, suggest ideas
 
 ---
 
@@ -123,4 +123,4 @@ We expect contributors to follow the [Code of Conduct](./CODE_OF_CONDUCT.md). Be
 ---
 
 Thanks again for contributing!  
-— Arghya Ghosh, [@uiuxarghya](https://github.com/uiuxarghya)
+— Arghya Ghosh, [@arghyaxcodes](https://github.com/arghyaxcodes)

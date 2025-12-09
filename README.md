@@ -36,10 +36,10 @@
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=flat)
 ![Prisma](https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=fff&style=flat)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=fff&style=flat)
-![GitHub stars](https://img.shields.io/github/stars/uiuxarghya/8bits?style=flat&logo=github)
-![GitHub issues](https://img.shields.io/github/issues/uiuxarghya/8bits?style=flat&logo=github)
-![GitHub forks](https://img.shields.io/github/forks/uiuxarghya/8bits?style=flat&logo=github)
-![GitHub PRs](https://img.shields.io/github/issues-pr/uiuxarghya/8bits?style=flat&logo=github)
+![GitHub stars](https://img.shields.io/github/stars/arghyaxcodes/8bits?style=flat&logo=github)
+![GitHub issues](https://img.shields.io/github/issues/arghyaxcodes/8bits?style=flat&logo=github)
+![GitHub forks](https://img.shields.io/github/forks/arghyaxcodes/8bits?style=flat&logo=github)
+![GitHub PRs](https://img.shields.io/github/issues-pr/arghyaxcodes/8bits?style=flat&logo=github)
 
 </div>
 
@@ -82,7 +82,7 @@ Make sure you have the following installed:
 1. **Fork** the repository and **clone** it locally:
 
    ```bash
-   git clone https://github.com/uiuxarghya/8bits.git
+   git clone https://github.com/arghyaxcodes/8bits.git
    cd 8bits
    ```
 
@@ -112,12 +112,12 @@ We welcome contributions to 8bits! If you'd like to contribute, please follow th
 
 ## 🧑🏻‍💻 Contributors
 
-<a href="https://github.com/uiuxarghya/8bits/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=uiuxarghya/8bits" />
+<a href="https://github.com/arghyaxcodes/8bits/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=arghyaxcodes/8bits" />
 </a>
 
-For a list of contributors, visit the [contributors page](https://github.com/uiuxarghya/8bits/graphs/contributors).
+For a list of contributors, visit the [contributors page](https://github.com/arghyaxcodes/8bits/graphs/contributors).
 
 ## 🔑 License
 
-This project is licensed under the [AGPL-3.0 license](https://github.com/uiuxarghya/8bits/blob/main/LICENSE).
+This project is licensed under the [AGPL-3.0 license](https://github.com/arghyaxcodes/8bits/blob/main/LICENSE).
