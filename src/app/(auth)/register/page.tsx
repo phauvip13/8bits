@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { authClient } from "@/lib/auth-client"; // Đảm bảo bạn có file này trong thư mục lib
+import { authClient } from "@/lib/auth-client"; 
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -10,6 +10,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Input } from "@/components/ui/input"; // Đảm bảo bạn có file này trong components/ui
 import Link from "next/link";
 
 export default function RegisterPage() {
@@ -28,60 +29,68 @@ export default function RegisterPage() {
     });
 
     if (error) {
-      alert(error.message || "Có lỗi xảy ra khi đăng ký");
+      alert(error.message || "Lỗi đăng ký");
     } else {
-      alert("Đăng ký thành công!");
+      alert("Đăng ký thành công! Đang chuyển hướng...");
       window.location.href = "/dashboard";
     }
     setLoading(false);
   };
 
   return (
-    <Card className="w-full max-w-sm rounded-2xl shadow-lg mx-auto mt-20">
-      <CardHeader>
-        <CardTitle className="mx-auto text-lg md:text-xl">
-          Tạo tài khoản 8bits
-        </CardTitle>
-      </CardHeader>
-      <CardContent>
-        <div className="grid gap-4">
-          <div className="flex flex-col gap-2">
-            <input
-              type="text"
-              placeholder="Tên của bạn"
-              className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-              onChange={(e) => setName(e.target.value)}
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            <input
-              type="password"
-              placeholder="Mật khẩu"
-              className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-              onChange={(e) => setPassword(e.target.value)}
-            />
+    <div className="flex items-center justify-center min-h-screen p-4">
+      <Card className="w-full max-w-sm rounded-2xl shadow-lg">
+        <CardHeader>
+          <CardTitle className="mx-auto text-lg md:text-xl text-center">
+            Tạo tài khoản 8bits (Email)
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div className="grid gap-4">
+            <div className="grid gap-2">
+              <label htmlFor="name">Họ và tên</label>
+              <Input
+                id="name"
+                placeholder="Nguyễn Văn A"
+                onChange={(e) => setName(e.target.value)}
+              />
+            </div>
+            <div className="grid gap-2">
+              <label htmlFor="email">Email</label>
+              <Input
+                id="email"
+                type="email"
+                placeholder="name@example.com"
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </div>
+            <div className="grid gap-2">
+              <label htmlFor="password">Mật khẩu</label>
+              <Input
+                id="password"
+                type="password"
+                placeholder="******"
+                onChange={(e) => setPassword(e.target.value)}
+              />
+            </div>
+            <Button 
+              className="w-full mt-2" 
+              onClick={handleRegister} 
+              disabled={loading}
+            >
+              {loading ? "Đang xử lý..." : "Đăng ký bằng Email"}
+            </Button>
           </div>
-          <Button 
-            className="w-full" 
-            onClick={handleRegister} 
-            disabled={loading}
-          >
-            {loading ? "Đang xử lý..." : "Đăng ký ngay"}
-          </Button>
-        </div>
-      </CardContent>
-      <CardFooter className="text-xs md:text-sm">
-        <p className="mx-auto">
-          Đã có tài khoản? &nbsp;
-          <Link href="/login" className="text-blue-500 font-medium">
-            Đăng nhập
-          </Link>
-        </p>
-      </CardFooter>
-    </Card>
+        </CardContent>
+        <CardFooter className="text-xs md:text-sm">
+          <p className="mx-auto text-muted-foreground">
+            Đã có tài khoản? &nbsp;
+            <Link href="/login" className="text-blue-500 hover:underline">
+              Đăng nhập
+            </Link>
+          </p>
+        </CardFooter>
+      </Card>
+    </div>
   );
 }
